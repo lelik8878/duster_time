@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Time</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" />
+</head>
+<body>
+<header><h1>Set Time</h1></header>
+<section class="container">
+    <div class="profile-info">
+        <img src="{% static 'img/duster.jpg' %}" alt="Главное изображение " class="main-image">
+        <h2>Текущий дастер:</h2>
+        <h2>{{ current_duster.duster_time|date:"Y-m-d H:i" }}</h2>
+        <form class="edit-form" method="POST">
+        {% csrf_token %}
+        <p>{{ form.as_p }}</p>
+        <button type="submit">Сохранить изменения</button>
+        </form>
+        <div class="">
+            <a href="{% url 'home' %}" class=""><button class="action_button">На главную</button></a>
+        </div>
+    </div>
+</section>
+<footer>
+    <h6>by Alexei Giro</h6>
+</footer>
+</body>
+</html>

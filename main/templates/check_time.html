@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Time</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" />
+</head>
+<body>
+<header><h1>Check Time</h1></header>
+<section class="container">
+    <div class="profile-info">
+        <img src="{% static 'img/duster.jpg' %}" alt="Главное изображение " class="main-image">
+        {% if duster %}
+            <h2>До дастера осталось:</h2>
+            <h2>Дней: {{ days }}</h2>
+            <h2>Часов: {{ hours }}</h2>
+            <h2>Минут: {{ minutes }}</h2>
+        {% else %}
+            <h2>Дастер уже начался</h2>
+        {% endif %}
+        <div class="">
+            <a href="{% url 'home' %}" class=""><button class="action_button">На главную</button></a>
+        </div>
+    </div>
+</section>
+<footer>
+    <h6>by Alexei Giro</h6>
+</footer>
+</body>
+</html>

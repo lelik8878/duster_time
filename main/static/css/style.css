@@ -1,0 +1,85 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+footer {
+    background: #007bff;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.profile-info {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.profile-info img.main-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.action_button {
+    width: 80%;
+    margin-top: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 1s ease;
+
+}
+.action_button:hover {
+    background: #0056b3;
+    transform: scale(102%);
+}
+.edit-form {
+    margin-top: 20px;
+}
+.edit-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+.edit-form input, .edit-form textarea {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.edit-form button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 1s ease;
+}
+.edit-form button:hover {
+    background: #0056b3;
+    transform: scale(102%);
+}
